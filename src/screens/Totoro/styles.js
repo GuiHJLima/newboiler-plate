@@ -11,12 +11,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 
-  backButton: {
-    backgroundColor: 'red',
-    padding: 10,
-    borderRadius: 5,
-    marginTop: 20,
-  },
 });
 
 export default styles;
