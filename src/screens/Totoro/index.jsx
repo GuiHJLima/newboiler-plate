@@ -12,7 +12,7 @@ export default function Totoro() {
       <Title title="Welcome to the Totoro screen" />
       <Image source={require('./../../../assets/totoro.jpg')} style={{ width: '100%', height: '50%' }} />
       <Text style={styles.text}>Click on the button below to go to the Home screen</Text>
-      <MyButton destination="Home" type="back"/>
+      <MyButton destination="Home" type="back" name="Home"/>
     </View>
   )
 }

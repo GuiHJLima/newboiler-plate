@@ -10,7 +10,7 @@ export default function Home() {
     <View style={styles.container}>
       <Title title="Welcome to the Home screen" />
       <Text style={styles.text}>Click on the button below to go to the Totoro screen</Text>
-      <MyButton destination="Totoro"/>
+      <MyButton destination="Totoro" name="Totoro"/>
     </View>
   )
 }

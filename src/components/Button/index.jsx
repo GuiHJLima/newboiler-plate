@@ -3,7 +3,7 @@ import styles from './styles'
 import { useNavigation } from '@react-navigation/native';
 
 
-const MyButton = ({destination, type}) => {
+const MyButton = ({destination, type, name}) => {
 
   const navigation = useNavigation()
 
@@ -11,11 +11,11 @@ const MyButton = ({destination, type}) => {
     <>
     { type === 'back' ?
       <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-        <Text style={styles.text}>Go back</Text>
+        <Text style={styles.text}>Go to {name}</Text>
       </TouchableOpacity>
       :
       <TouchableOpacity onPress={() => navigation.navigate(destination)} style={styles.goButton}>
-        <Text style={styles.text}>Go to {destination}</Text>
+        <Text style={styles.text}>Go to {name}</Text>
       </TouchableOpacity>
       }
     </>
