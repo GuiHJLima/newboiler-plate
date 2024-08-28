@@ -1,6 +1,7 @@
 import { Text, TouchableOpacity } from 'react-native'
 import styles from './styles'
 import { useNavigation } from '@react-navigation/native';
+import TextButton from '../TextButton';
 
 
 const MyButton = ({destination, type, name}) => {
@@ -11,11 +12,11 @@ const MyButton = ({destination, type, name}) => {
     <>
     { type === 'back' ?
       <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-        <Text style={styles.text}>Go to {name}</Text>
+        <TextButton text={'Go Back to ' + name}/>
       </TouchableOpacity>
       :
       <TouchableOpacity onPress={() => navigation.navigate(destination)} style={styles.goButton}>
-        <Text style={styles.text}>Go to {name}</Text>
+        <TextButton text={'Go to ' + name}/>
       </TouchableOpacity>
       }
     </>
