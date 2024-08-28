@@ -1,10 +1,9 @@
 import { View, Text } from 'react-native'
 
-export default function Home() {
+export default function Totoro() {
   return (
     <View>
-      <Text>Home Screen</Text>
-      
+      <Text>Totorohaus</Text>
     </View>
   )
 }
