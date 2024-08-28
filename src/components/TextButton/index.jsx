@@ -7,7 +7,7 @@ const TextButton = ({text}) => {
 
   return (
     <>
-      <Text style={styles.text}>{text}</Text>
+      <Text style={styles.textButton}>{text}</Text>
     </>
   )
 }

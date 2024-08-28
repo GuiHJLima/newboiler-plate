@@ -3,8 +3,9 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     
   textButton:{
-    color: 'green',
     fontSize: 20,
+    fontStyle: 'italic',
+    fontWeight: 'bold',
     padding: 10,
   },
     });
